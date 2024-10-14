@@ -109,3 +109,13 @@ button:hover {
   background: url("https://i.imgur.com/9t1UjIZ.png") no-repeat center / contain;
   animation: float 5s ease-in-out infinite;
 }
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-section video {
+    margin: 10px 0; /* Space between videos */
+}
