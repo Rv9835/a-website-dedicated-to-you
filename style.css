@@ -1,114 +1,113 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "Arial", sans-serif;
-  overflow: hidden;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: auto; /* Allow height to be determined by content */
+    font-family: "Arial", sans-serif;
+    overflow-y: auto; /* Allow vertical scrolling */
 }
 
 .background {
-  background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0")
-    no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
+    background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Ensures the background covers the entire viewport height */
+    position: relative;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .container {
-  position: relative;
-  color: #fff;
-  text-align: center;
-  padding-top: 50px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px; /* Added padding for mobile devices */
 }
 
 .title {
-  font-size: 3em;
-  animation: fadeIn 3s ease-in;
+    font-size: 3em;
+    animation: fadeIn 3s ease-in;
 }
 
 .subtitle {
-  font-size: 2em;
-  margin: 20px 0;
-  animation: fadeIn 3s ease-in 0.5s;
+    font-size: 2em;
+    margin: 20px 0;
+    animation: fadeIn 3s ease-in 0.5s;
 }
 
 .memories {
-  margin: 40px auto;
-  max-width: 600px;
+    margin: 40px auto;
+    max-width: 600px;
 }
 
 .memory {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  padding: 15px;
-  margin: 10px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .quote-section {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 blockquote {
-  font-size: 1.2em;
-  color: #ff69b4;
-  margin: 20px 0;
+    font-size: 1.2em;
+    color: #ff69b4;
+    margin: 20px 0;
 }
 
 button {
-  background-color: #ff69b4;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #ff1493;
+    background-color: #ff1493;
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Nature Effects */
 @keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .floating-heart {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: url("https://i.imgur.com/9t1UjIZ.png") no-repeat center / contain;
-  animation: float 5s ease-in-out infinite;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("https://i.imgur.com/9t1UjIZ.png") no-repeat center / contain;
+    animation: float 5s ease-in-out infinite;
 }
+
 .video-section {
     display: flex;
     flex-direction: column;
@@ -118,4 +117,6 @@ button:hover {
 
 .video-section video {
     margin: 10px 0; /* Space between videos */
+    max-width: 100%; /* Ensure videos are responsive */
+    height: auto; /* Maintain aspect ratio */
 }
