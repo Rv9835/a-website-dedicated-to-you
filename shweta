@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Shweta!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1 class="title">Happy Birthday, Shweta! 🎉</h1>
+        <h2 class="subtitle">Together, Ranvijay & Shweta</h2>
+
+        <div class="memories">
+          <div class="memory">
+            <h3>The Day We Met 🌟</h3>
+            <p>Our paths crossed, and my heart knew you were special.</p>
+          </div>
+          <div class="memory">
+            <h3>Our First Date 💫</h3>
+            <p>Under the stars, we shared laughter and dreams.</p>
+          </div>
+          <div class="memory">
+            <h3>Your Smile ❤️</h3>
+            <p>Every smile of yours lights up my world.</p>
+          </div>
+          <div class="memory">
+            <h3>Our Adventures 🚀</h3>
+            <p>Every moment with you is a beautiful adventure.</p>
+          </div>
+        </div>
+
+        <div class="quote-section">
+          <h2>Special Quotes:</h2>
+          <blockquote>
+            "You are my sun, my moon, and all my stars." - E.E. Cummings
+          </blockquote>
+          <blockquote>
+            "In you, I've found the love of my life and my closest friend." -
+            Unknown
+          </blockquote>
+        </div>
+
+        <button onclick="playMusic()">Play Our Song 🎶</button>
+        <audio id="love-song" src="love-song.mp3"></audio>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
